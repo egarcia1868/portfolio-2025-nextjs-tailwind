@@ -9,9 +9,10 @@ import {
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
+import { useTheme } from "../context/ThemeContext";
 
 const Navbar = () => {
-  const theme = "dark"; // TODO: get theme from context
+  const {theme, toggleTheme} = useTheme();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(true);
   const pathname = usePathname();
   const toggleMobileMenu = () => {
@@ -22,11 +23,11 @@ const Navbar = () => {
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
     { label: "Projects", href: "/projects" },
-    { label: "Blog", href: "/blog" },
+    { label: "Blogs", href: "/blogs" },
     { label: "Contact", href: "/contact" },
   ];
   return (
-    <nav className="fixed w-full bg-dark/80 backdrop-blur-sm z-50">
+    <nav className="fixed w-full bg-white/80 dark:bg-dark/80 backdrop-blur-sm z-50 border-b border-gray-200 dark:border-gray-700 shadow-md transition-colors">
       <div className="container max-w-7xl mx-auto px-4">
         {/* desktop menus */}
         <div className="flex items-center justify-between h-16">
@@ -47,7 +48,7 @@ const Navbar = () => {
                 </Link>
               );
             })}
-            <button className="p-2 rounded-lg hover:bg-gray-100 text-primary cursor-pointer dark:hover:bg-gray-800 transition-colors">
+            <button onClick={toggleTheme} className="p-2 rounded-lg hover:bg-gray-100 dark:text-white hover:text-primary cursor-pointer dark:hover:bg-gray-800 transition-colors">
               {theme === "dark" ? (
                 <SunIcon className="w-5 h-5" />
               ) : (
@@ -58,7 +59,7 @@ const Navbar = () => {
 
           {/* mobile menu button */}
           <button
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors cursor-pointer"
+            className="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-primary transition-colors cursor-pointer"
             onClick={toggleMobileMenu}
           >
             {isMobileMenuOpen ? (
@@ -85,7 +86,7 @@ const Navbar = () => {
                 </div>
               ))}
               <div>
-                <button className="flex items-center py-2 hover:text-primary transition-colors">
+                <button onClick={toggleTheme} className="flex items-center py-2 hover:text-primary transition-colors cursor-pointer">
                   {theme === "dark" ? (
                     <>
                       <SunIcon className="w-5 h-5 mr-2" /> Light Mode
