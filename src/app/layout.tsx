@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "Eric Garcia",
   description: "Homepage/portfolio of Eric Garcia, a full-stack developer.",
   icons: {
-    icon: "/EG-logo.png",
+    icon: "projects/EG-logo.png",
   },
 };
 

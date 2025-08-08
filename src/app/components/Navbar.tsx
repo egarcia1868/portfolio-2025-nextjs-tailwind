@@ -14,7 +14,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(true);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
   const pathname = usePathname();
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -22,9 +22,10 @@ const Navbar = () => {
 
   const menuItems = [
     { label: "Home", href: "/" },
-    { label: "About", href: "/about" },
+    { label: "Skills", href: "/skills" },
+    { label: "Experience", href: "/experience" },
     { label: "Projects", href: "/projects" },
-    { label: "Blogs", href: "/blogs" },
+    { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
   ];
   return (
