@@ -17,13 +17,21 @@ const About = () => {
           growth-oriented approach to any engineering team, always eager to
           learn, support others, and deliver impactful solutions.
         </p>
+        <p className="text-lg text-secondary max-w-3xl mx-auto leading-snug mb-6">
+          Fast-tracked from a customer service role to Software Engineer at
+          ZenBusiness within just 8 months, followed by a promotion to Engineer
+          L2 in 16 months due to strong performance, ownership, and ability to
+          deliver results.
+        </p>
         <p className="text-lg text-secondary max-w-3xl mx-auto leading-snug">
-          Front-End + Full-Stack | Responsive Design | Accessibility / WCAG | Object-Oriented Programming | Functional Programming |
-          Cross-Browser Compatibility | Performance Optimization | Progressive
-          Web Apps | RESTful APIs | GraphQL | Agile/Scrum Methodologies | Version
+          Front-End + Full-Stack | Responsive Design | Accessibility / WCAG |
+          Object-Oriented Programming | Functional Programming | Cross-Browser
+          Compatibility | Performance Optimization | Progressive Web Apps |
+          RESTful APIs | GraphQL | Agile/Scrum Methodologies | Version
           Pixel-Perfect Implementation | Microservices | API Design &
-          Development | Unit & End-to-End Testing | Monitoring & Observability | UI/UX Design
-          Mentoring & Team Development | Infrastructure & CI/CD | Micro Frontends | 
+          Development | Unit & End-to-End Testing | Monitoring & Observability |
+          UI/UX Design Mentoring & Team Development | Infrastructure & CI/CD |
+          Micro Frontends |
         </p>
       </section>
 
@@ -76,36 +84,31 @@ const About = () => {
         </div>
       </section>
 
-      {/* experience section */}
-      <section className="mb-16">
-        <h2 className="section-title">Experience</h2>
-        <div className="max-w-3xl mx-auto space-y-8">
-          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
-          <h3 className="text-xl font-semibold mb-2">
-            Frontend / Full-Stack Software Engineer
-          </h3>
-          <p className="text-primary mb-2">
-            ZenBusiness • Date - Date
-          </p>
-          <ul className="text-secondary space-y-2 list-disc list-inside">
-            <li>Breakdown of things done</li>
-          </ul>
-          </div>
-        </div>
-      </section>
-
       {/* education section */}
       <section>
-                <h2 className="section-title">Education</h2>
+        <h2 className="section-title">Education</h2>
         <div className="max-w-3xl mx-auto space-y-8">
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
-          <h3 className="text-xl font-semibold mb-2">
-            Frontend / Full-Stack Software Engineer
-          </h3>
-          <p className="text-primary mb-2">
-            ZenBusiness • Date - Date
-          </p>
-          <p className="text-secondary">Course information</p>
+            <h4 className="text-xl font-semibold mb-2">
+              Bootcamp Certificate (Full Stack Web Development)
+            </h4>
+
+            <div className="justify-between flex items-center">
+              <p className="text-primary">
+                <strong>University of Texas at Austin</strong>
+              </p>
+              <p className="text-primary">Dec 2019 - May 2020</p>
+            </div>
+
+            <p className="text-primary mb-2">
+              <strong>Grade:</strong> A+
+            </p>
+            <p className="text-secondary">
+              A 24-week, Full Stack, intensive program focused on gaining
+              technical programming skills in HTML5, CSS3, JavaScript, jQuery,
+              Bootstrap, Node.js, MySQL, MongoDB, Express, Handlebars.js, &
+              ReactJS.
+            </p>
           </div>
         </div>
       </section>
