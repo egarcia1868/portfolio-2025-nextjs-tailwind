@@ -18,13 +18,19 @@ import {
 import { FaProjectDiagram } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import { SiExpress } from "react-icons/si";
-import Tooltip from "./utils/Tooltip";
+import Tooltip from "./Tooltip";
+import { motion} from "framer-motion";
+import { fadeInUp, scaleIn } from "../utils/animation";
 
 const Hero = () => {
   return (
     <section className="py-28 container max-w-7xl mx-auto px-4">
       <div className="max-w-3xl mx-auto text-center">
         <div className="flex flex-col items-center mb-4">
+          <motion.div
+        {...scaleIn}
+        transition={{delay: 0.2}}
+        >
           <Image
             src="/projects/myPhoto.jpg"
             alt="profile image"
@@ -32,11 +38,20 @@ const Hero = () => {
             height={100}
             className="rounded-full mb-4 w-32 h-32 object-cover ring-2 ring-primary"
           />
-          <h1 className="text-4xl md:test-6xl font-bold mb-6">Eric Garcia</h1>
-          <p className="text-xl md:text-2xl mb-4">
+          </motion.div>
+          <motion.h1 className="text-4xl md:test-6xl font-bold mb-6"
+          
+        {...fadeInUp}
+        transition={{delay: 0.3}}>Eric Garcia</motion.h1>
+          <motion.div
+          
+        {...fadeInUp}
+        transition={{delay: 0.7}}
+        ><p
+          className="text-xl md:text-2xl mb-2">
             Experienced software engineer
           </p>
-          <div className="flex flex-wrap items-center gap-2 justify-center">
+          <div className="mb-6 flex flex-wrap items-center gap-2 justify-center">
             <Tooltip label="JavaScript" exp="5">
               <BiLogoJavascript className="h-8 w-8 text-primary" />
             </Tooltip>
@@ -77,8 +92,6 @@ const Hero = () => {
               <BiLogoGraphql className="h-8 w-8 text-primary" />
             </Tooltip>
           </div>
-        </div>
-      </div>
       <p className="text-lg mb-6 text-secondary max-w-3xl mx-auto leading-snug">
         Experienced and versatile software engineer with a front-end leaning,
         full-stack background and a passion for continuous improvement. Known
@@ -111,6 +124,9 @@ const Hero = () => {
         >
           View All Skills
         </Link>
+      </div>
+      </motion.div>
+      </div>
       </div>
     </section>
   );
