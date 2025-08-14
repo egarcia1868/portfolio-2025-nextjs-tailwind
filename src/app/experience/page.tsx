@@ -119,34 +119,30 @@ const Blogs = () => {
       <section className="mb-16">
         <h2 className="section-title">Additional Experience</h2>
         <div className="max-w-3xl mx-auto space-y-8">
-<div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-2">
-              Customer Care Agent
-            </h3>
+          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-2">Customer Care Agent</h3>
             <div className="justify-between flex items-center mb-2">
-              <p className="text-primary">ZenBusiness — Austin, Tx - (remote)</p>
+              <p className="text-primary">
+                ZenBusiness — Austin, Tx - (remote)
+              </p>
               <p className="text-primary">Apr 2021 - Jan 2022</p>
             </div>
           </div>
-<div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-2">
-              Supervisor
-            </h3>
+          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-2">Supervisor</h3>
             <div className="justify-between flex items-center mb-2">
               <p className="text-primary">Nervous Charlies — Austin, Tx</p>
               <p className="text-primary">Mar 2019 - Dec 2020</p>
             </div>
           </div>
-<div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-2">
-              Intake Coordinator
-            </h3>
+          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-2">Intake Coordinator</h3>
             <div className="justify-between flex items-center mb-2">
               <p className="text-primary">Bird — Austin, Tx</p>
               <p className="text-primary">Dec 2018 - Mar 2019</p>
             </div>
           </div>
-<div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
+          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-2">
               Food & Beverage Manager
             </h3>
@@ -155,12 +151,12 @@ const Blogs = () => {
               <p className="text-primary">Jun 2017 - Nov 2018</p>
             </div>
           </div>
-<div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-2">
-              Manager
-            </h3>
+          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-2">Manager</h3>
             <div className="justify-between flex items-center mb-2">
-              <p className="text-primary">Buford&apos;s Beer Garden — Austin, Tx</p>
+              <p className="text-primary">
+                Buford&apos;s Beer Garden — Austin, Tx
+              </p>
               <p className="text-primary">Nov 2015 - Nov 2017</p>
             </div>
           </div>
