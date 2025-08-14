@@ -1,24 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import {
-  BiLogoGraphql,
-  BiLogoJavascript,
-  BiLogoMongodb,
-  BiLogoNodejs,
-  BiLogoPostgresql,
-  BiLogoReact,
-  BiLogoRedux,
-  BiLogoTailwindCss,
-  BiLogoTypescript,
-  BiLogoVuejs,
-} from "react-icons/bi";
-import { FaProjectDiagram } from "react-icons/fa";
-import { RiNextjsFill } from "react-icons/ri";
-import { SiExpress } from "react-icons/si";
-import Tooltip from "./utils/Tooltip";
 
 const Contact = () => {
   return (
