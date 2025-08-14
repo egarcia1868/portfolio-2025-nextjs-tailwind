@@ -1,5 +1,7 @@
+import ProjectsComponent from "../components/Projects";
+
 const Projects = () => {
-  return <div>Projects Page</div>;
+  return <ProjectsComponent />;
 };
 
 export default Projects;
