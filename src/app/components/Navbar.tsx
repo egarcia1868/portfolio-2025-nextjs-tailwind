@@ -11,8 +11,6 @@ import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import { useTheme } from "../context/ThemeContext";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import Tooltip from "./Tooltip";
-import { MdEmail } from "react-icons/md";
 
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
@@ -27,7 +25,7 @@ const Navbar = () => {
     { label: "Experience", href: "/experience" },
     { label: "Projects", href: "/projects" },
     { label: "Skills", href: "/skills" },
-    // { label: "Contact", href: "/contact" },
+    { label: "Contact", href: "mailto:egarcia.austin.tx@gmail.com" },
   ];
   return (
     <nav className="fixed w-full bg-white/80 dark:bg-dark/80 backdrop-blur-sm z-50 border-b border-gray-200 dark:border-gray-700 shadow-md transition-colors">
@@ -63,10 +61,6 @@ const Navbar = () => {
                 </Link>
               );
             })}
-            <Tooltip type="contact" placement="bottom">
-              Contact
-            </Tooltip>
-            <Tooltip>Contact</Tooltip>
             <button
               onClick={toggleTheme}
               className="p-2 rounded-lg hover:bg-gray-100 dark:text-white hover:text-primary cursor-pointer dark:hover:bg-gray-800 transition-colors"
