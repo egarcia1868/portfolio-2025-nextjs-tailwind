@@ -111,7 +111,7 @@ const Hero = () => {
           >
             Eric Garcia
           </motion.h1>
-          <motion.div {...fadeInUp} transition={{ delay: 0.7 }}>
+          <motion.div {...fadeInUp} transition={{ delay: 0.6 }}>
             <p className="text-xl md:text-2xl mb-2">
               Experienced software engineer
             </p>

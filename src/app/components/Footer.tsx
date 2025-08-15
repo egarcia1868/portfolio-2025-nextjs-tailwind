@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -20,6 +21,12 @@ const Footer = () => {
               className="text-2xl text-gray-600 hover:text-primary dark:text-gray-300 transition-colors duration-300"
             >
               <FaLinkedin />
+            </Link>
+            <Link
+              href="mailto: egarcia.austin.tx@gmail.com"
+              className="text-2xl text-gray-600 hover:text-primary dark:text-gray-300 transition-colors duration-300"
+            >
+              <MdEmail />
             </Link>
           </div>
 
