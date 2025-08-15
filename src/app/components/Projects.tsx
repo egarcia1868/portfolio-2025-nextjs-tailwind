@@ -15,13 +15,19 @@ const Projects = () => {
             className="bg-white dark:bg-dark/50 rounded-lg shadow-md p-6"
           >
             <div className="relative aspect-video mb-4 rounded-lg overflow-hidden">
-              <Image
-                src={project.image}
-                alt={project.title}
-                fill
-                sizes="(max-width:768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                className="object-cover"
-              />
+              <a
+                href={project.demoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  sizes="(max-width:768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover"
+                />
+              </a>
             </div>
 
             <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
@@ -48,7 +54,7 @@ const Projects = () => {
                 <span>Code</span>
               </Link>
               <Link
-                href={project.githubLink}
+                href={project.demoLink}
                 target="_blank"
                 className="flex items-center gap-2 text-secondary hover:text-primary transition-colors"
               >

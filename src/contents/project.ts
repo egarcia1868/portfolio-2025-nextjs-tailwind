@@ -22,20 +22,27 @@ export const projects: Project[] = [
   {
     title: "Portfolio Website",
     description:
-      "My personal portfolio website showcasing my skills and projects.",
+      "My personal portfolio website showcasing my skills, experience, and projects.",
     technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    githubLink: "https://github.com",
-    demoLink: "https://demo.com",
-    image: "/projects/portfolio-website.jpg",
+    githubLink: "https://github.com/egarcia1868/portfolio-2025-nextjs-tailwind",
+    demoLink: "/",
+    image: "/projects/portfolio-website.png",
   },
   {
-    title: "Blog Platform",
+    title: "SetTrackR",
     description:
-      "A blogging platform with user authentication and markdown support.",
-    technologies: ["Gatsby", "GraphQL", "Contentful"],
-    githubLink: "https://github.com",
-    demoLink: "https://demo.com",
-    image: "/projects/blog-website.jpeg",
+      "A site for tracking concerts, setlists, and individual song counts.",
+    technologies: [
+      "React.js",
+      "REST API",
+      "MongoDB",
+      "Express.js",
+      "Node.js",
+      "NoSQL",
+    ],
+    githubLink: "https://github.com/egarcia1868/Set-Track-r",
+    demoLink: "https://set-trackr.onrender.com/",
+    image: "/projects/setTrackR.png",
   },
   // {
   //   title: "Weather App",
