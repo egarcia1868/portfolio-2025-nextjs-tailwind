@@ -25,13 +25,42 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Pre-hydration theme fix: default to dark, then respect saved theme */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+(function() {
+  try {
+    var t = localStorage.getItem('theme');
+    if (!t) t = 'dark'; // <- your chosen default
+    if (t === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  } catch (e) {
+    // If localStorage is unavailable, fall back to dark
+    document.documentElement.classList.add('dark');
+  }
+})();
+`,
+          }}
+        />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white transition-colors dark:bg-gray-900 dark:text-white`}
+        className={
+          `${geistSans.variable} ${geistMono.variable} ` +
+          // keep transitions subtle to avoid visible flash
+          `antialiased transition-colors ` +
+          // light styles
+          `bg-white text-black ` +
+          // dark styles
+          `dark:bg-gray-900 dark:text-white`
+        }
       >
         <ThemeProvider>
           <Navbar />
