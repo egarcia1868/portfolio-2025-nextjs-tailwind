@@ -1,11 +1,14 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
+
+const isProd = process.env.NODE_ENV === 'production'
+const repo = 'portfolio-2025-nextjs-tailwind' // <-- your repo
 
 const nextConfig: NextConfig = {
-  /* config options here */
-    output: 'export', // static HTML export
-  images: { unoptimized: true }, // so Next/Image works without the image optimizer
-  // If deploying to a subpath (like github.com/user/repo), set:
-  // basePath: '/your-repo-name',
-};
+  output: 'export',
+  images: { unoptimized: true },
+  basePath: isProd ? `/${repo}` : undefined,
+  assetPrefix: isProd ? `/${repo}/` : undefined,
+  trailingSlash: true, // good for GitHub Pages
+}
 
-export default nextConfig;
+export default nextConfig
