@@ -19,15 +19,7 @@ export const projects: Project[] = [
   //   demoLink: "https://demo.com",
   //   image: "/projects/task-manager.webp",
   // },
-  {
-    title: "Portfolio Website",
-    description:
-      "My personal portfolio website showcasing my skills, experience, and projects.",
-    technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    githubLink: "https://github.com/egarcia1868/portfolio-2025-nextjs-tailwind",
-    demoLink: "/",
-    image: "/projects/portfolio-website.png",
-  },
+  
   {
     title: "SetTrackR",
     description:
@@ -43,6 +35,15 @@ export const projects: Project[] = [
     githubLink: "https://github.com/egarcia1868/Set-Track-r",
     demoLink: "https://set-trackr.onrender.com/",
     image: "/projects/setTrackR.png",
+  },
+  {
+    title: "Portfolio Website",
+    description:
+      "This personal portfolio website showcasing my skills, experience, and projects.",
+    technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    githubLink: "https://github.com/egarcia1868/portfolio-2025-nextjs-tailwind",
+    demoLink: "/",
+    image: "/projects/portfolio-website.png",
   },
   // {
   //   title: "Weather App",
